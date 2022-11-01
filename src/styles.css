@@ -1,0 +1,121 @@
+body {
+    padding: 35px 15px 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #5a6275;
+    padding-left: 83px;
+    margin: 0px;
+    font-size: 70px !important;
+}
+
+.celsius-fahrenheit {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    color: #5a6275;
+}
+
+#celsius,
+#fahrenheit {
+    text-decoration: none;
+    color: #5285ac;
+}
+
+h2 {
+    font-size: 40px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+h3 {
+    color: #5a6275;
+    padding: 15px 5px 5px;
+    font-family: "Poppins";
+}
+
+p {
+    color: #5a6275;
+    font-family: "Poppins";
+}
+
+ul {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px !important;
+    list-style: none;
+}
+
+.emoji {
+    text-align: center;
+    display: block;
+    font-size: 60px;
+    margin-top: 0;
+    padding: 1px;
+}
+
+.date {
+    color: #5a6275;
+    font-size: 30px !important;
+    font-weight: bold;
+    font-family: "Poppins";
+}
+
+.forecast {
+    color: #5a6275;
+    font-size: 30px;
+    font-weight: light;
+    padding: 70px 10px 10px 10px;
+    font-family: "Poppins";
+}
+
+.details {
+    color: #5a6275;
+    font-style: italic;
+    font-family: "Poppins";
+}
+
+.btn-primary {
+    background: #66a8dc !important;
+    border: solid #5285ac 1px !important;
+    padding: 4px 12px !important;
+}
+
+.btn-outline-secondary {
+    border: solid #5285ac 1px !important;
+    padding: 4px 12px !important;
+    color: #5285ac !important;
+}
+
+.weather-card {
+    background: #e9ebee;
+}
+
+.card {
+    box-shadow: 1px 1px 4px 1px rgb(182, 179, 179);
+    font-family: "Poppins";
+    padding: 1px;
+}
+
+.card-body.weather-data {
+    padding: 1px;
+    margin: 3px;
+}
+
+.weather-data {
+    text-align: center;
+    font-family: "Poppins";
+}
+
+.emoji-weather {
+    font-size: 25px;
+    padding: 0cm;
+    margin: 0px;
+}
+
+.air-quality-data {
+    color: #5a6275;
+    font-size: 20px;
+    font-family: "Poppins";
+    font-weight: bold;
+}
