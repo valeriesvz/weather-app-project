@@ -119,3 +119,12 @@ ul {
     font-family: "Poppins";
     font-weight: bold;
 }
+.footer {
+    font-family: "Poppins";
+    text-decoration: none;
+    color: #5a6275;
+}
+.link-source-code {
+    text-decoration: none;
+    color: #5285ac;
+}
