@@ -1,6 +1,7 @@
 let time = document.querySelector(".date");
 let currentTime = new Date();
 let hours = currentTime.getHours();
+let celsiusTemperature
 let minutes = currentTime.getMinutes();
 if (minutes < 10) {
   minutes = `0${minutes}`;
@@ -21,7 +22,7 @@ time.innerHTML = `${day}, ${hours}:${minutes}`;
 function toCelsius(event) {
   event.preventDefault();
   let temp = document.querySelector(".temperature");
-  temp.innerHTML = 21 + "°";
+  temp.innerHTML = celsiusTemperature;
 }
 let c = document.querySelector("#celsius");
 c.addEventListener("click", toCelsius);
@@ -29,16 +30,17 @@ c.addEventListener("click", toCelsius);
 function toFahrenheit(event) {
   event.preventDefault();
   let temp = document.querySelector(".temperature");
-  temp.innerHTML = Math.round((21 * 9) / 5 + 32) + "°";
+  temp.innerHTML = Math.round((celsiusTemperature * 9) / 5 + 32);
 }
 let f = document.querySelector("#fahrenheit");
 f.addEventListener("click", toFahrenheit);
 
 function displayWeatherCondition(response) {
-  document.querySelector("h2").innerHTML = response.data.name;
-  document.querySelector(".temperature").innerHTML = Math.round(
+  celsiusTemperature = Math.round(
     response.data.main.temp
   );
+  document.querySelector("h2").innerHTML = response.data.name;
+  document.querySelector(".temperature").innerHTML = celsiusTemperature
 }
 
 function searchCity(city) {
@@ -53,6 +55,7 @@ function handleSubmit(event) {
   searchCity(city);
 }
 
+searchCity("Lima");
 let searchForm = document.querySelector("#search-city");
 searchForm.addEventListener("submit", handleSubmit);
 
