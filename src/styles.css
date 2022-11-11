@@ -129,10 +129,16 @@ ul {
     color: #5285ac;
 }
 .weather-forecast-date {
-    font-size: 16px;
+    font-size: 18px;
     opacity: 0.5;
 }
 
 .weather-forecast-temperature-min {
     opacity: 0.5;
+}
+.weather-forecast-temperatures {
+    font-size: 15.5px;
+}
+.col-2 {
+    text-align: center;
 }
