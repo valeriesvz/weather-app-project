@@ -65,7 +65,7 @@ ul {
     color: #5a6275;
     font-size: 30px;
     font-weight: light;
-    padding: 70px 10px 10px 10px;
+    padding: 50px 10px 10px 10px;
     font-family: "Poppins";
 }
 
@@ -127,4 +127,12 @@ ul {
 .link-source-code {
     text-decoration: none;
     color: #5285ac;
+}
+.weather-forecast-date {
+    font-size: 16px;
+    opacity: 0.5;
+}
+
+.weather-forecast-temperature-min {
+    opacity: 0.5;
 }
